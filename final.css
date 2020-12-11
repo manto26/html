@@ -22,3 +22,6 @@ body {
 	padding: 1em;
 	text-align: center;
 }
+.datetimebox {
+    display: flex;
+}
