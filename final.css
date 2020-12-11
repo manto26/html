@@ -1,0 +1,24 @@
+img {
+	height: 70px;
+	width:70px;
+}
+body {
+	background-color: #e6ffe6;
+}
+#form {
+	display:block;
+	margin-left: auto;
+	margin-right: auto;
+}
+.article {
+	margin-left: 100px;
+	margin-right: 100px;
+	border-left: 3px solid #ac7339;
+	border-right: 3px solid #ac7339;
+	padding: 2em;
+	overflow: hidden;
+}
+.header {
+	padding: 1em;
+	text-align: center;
+}

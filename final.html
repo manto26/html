@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Application form for Unemployed</title>
+	<!--Shortcut Icon-->
+	<link rel="shortcut icon" href="https://shared.uoit.ca/shared/department/itsc/All%20Images/form.gif">
+	<!--Link to CSS-->
+	<link rel="stylesheet" type="text/css" href="final.css">
+	<!--Link to JavaScript-->
+	<script type="text/javascript" src="final1.js"></script>
+</head>
+<body>
+	<!--Image-->
+	<img src="https://shared.uoit.ca/shared/department/itsc/All%20Images/form.gif" alt="complete form" id="form">
+	<h1 class="header">Application form for unemployed</h1>
+	<hr>
+	<div class="article">
+		<form>
+			<!--First name-->
+			First Name<br>
+			<input type="text" name="firstName" id="firstName" onblur="validateFirstName();"><br>
+			<span id="firstNamePrompt">&nbsp;</span><br><br>
+			<!--Last name-->
+			Last Name<br>
+			<input type="text" name="lastName" id="lastName" onblur="validateLastName();"><br>
+			<span id="lastNamePrompt">&nbsp;</span><br><br>
+			<!--Email Address-->
+			E-mail Address<br>
+			<input type="text" name="email" id="email" onblur="validateEmail();"><br>
+			<span id="emailPrompt">&nbsp;</span><br><br>
+			Phone Number<br>
+			<input type="text" name="phone" id="phone" onblur="validatePhoneNumber();" placeholder="xxx-xxx-xxxx"><br>
+			<span id="phonePrompt">&nbsp;</span><br><br>
+			<!-- Education -->
+			What is you aducation status?<br>
+			<select>
+				<option value="SHS">Some High School</option>
+				<option value="HS">High School Diploma /GED</option>
+				<option value="SC">College</option>
+				<option value="AD">Assossiate's Degree</option>
+				<option value="BD">Bachelor's Degree</option>
+				<option value="MD">Master's Degree or higher</option>
+			</select>
+			<br><br>
+			<!--Other languages-->
+			What other languages you know?<br>
+			<input type="checkbox" name="french" value="french">French<br>
+			<input type="checkbox" name="italian" value="italian">Italian<br>
+			<input type="checkbox" name="russian" value="russian">Russian<br>
+			<input type="checkbox" name="chinese" value="chinese">Chinese<br>
+			<input type="checkbox" name="german" value="german">German<br>
+			<!-- Previous experience-->
+			Do you have any experience in any work?<br>
+			<input type="radio" name="experience" value="yes">Yes<br>
+			<input type="radio" name="experience" value="no">No<br><br>
+			<!-- Dates and type of work-->
+			If yes please fill your work experience<br><br>
+			<table border="1">
+				<tr>
+					<td type="heading">Start of employment</td><td type="heading">End of employment</td><td type="heading">Job description</td>
+				</tr>
+				<tr>
+					<td><input type="date" name="date"></td><td><input type="date" name="date"></td><td><input type="text" rows="5" cols="10"></td>
+				</tr>
+				<tr>
+					<td><input type="date" name="date"></td><td><input type="date" name="date"></td><td><input type="text" rows="5" cols="10"></td>
+				</tr>					<tr>
+					<td><input type="date" name="date"></td><td><input type="date" name="date"></td><td><input type="text" rows="5" cols="10"></td>
+				</tr>
+				<tr>
+					<td><input type="date" name="date"></td><td><input type="date" name="date"></td><td><input type="text" rows="5" cols="10"></td>
+				</tr>
+				<tr>
+					<td><input type="date" name="date"></td><td><input type="date" name="date"></td><td><input type="text" rows="5" cols="10"></td>
+				</tr>
+			</table><br><br>
+			<!--Upload a resume-->
+			Tell us something about you<br>
+			<textarea id="text" rows="10" cols="30" placeholder="The purpose of an unemployed application form is to match the best possible people for the best suited jobs. It is a way to distribute the ones with specific skills to more demanding jobs and help other to gather experience."></textarea>
+
+		</form>
+	</div>
+
+</body>
+</html>
